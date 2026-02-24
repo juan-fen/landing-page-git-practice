@@ -98,3 +98,20 @@
 
 
 /* Joseph's Workspace */
+
+.upper__wrapper{
+    display: flex;
+}
+
+.upper__column-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 20px 0px;
+}
+
+.upper__list-item--header{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 7.5px;
+}
