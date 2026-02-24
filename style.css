@@ -1,117 +1,211 @@
 /* Juan's Workspace */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 28px;
+  color: #1a1a1a;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #555;
+}
+
+.chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: all 0.2s ease;
+}
+
+.btn-signin {
+  background-color: transparent;
+  color: #000;
+}
+
+.btn-signin:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-order {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-order:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero-content {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.btn-shop {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.2s;
+}
+
+.btn-shop:hover {
+  background-color: #333;
+}
+
+.hero-image-placeholder {
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-icon {
+  width: 120px;
+  height: 120px;
+  fill: #bdbdbd;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-image-placeholder {
+    height: 400px;
+  }
+
+  .hero-content {
+    padding: 40px 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
 
 /* Joseph's Workspace */
 
-.upper__wrapper{
-    display: flex;
+.upper__wrapper {
+  display: flex;
+  padding: 5rem 2rem;
 }
 
-.upper__column-wrapper{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px 20px 0px;
+.upper__column-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px 20px 0px;
 }
 
-.upper__list-item--header{
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 7.5px;
+.upper__list-item--header {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 7.5px;
 }
